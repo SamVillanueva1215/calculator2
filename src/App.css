@@ -11,7 +11,6 @@ body {
   background-color: #f7faf5;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #2d3748;
-  
 }
 
 .App {
@@ -49,13 +48,14 @@ body {
   height: 80px;
   border-radius: 12px;
   padding: 12px 18px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   overflow-x: auto;
+  white-space: nowrap;
   margin-bottom: 16px;
   border: 1px solid #b3de89;
   letter-spacing: 1px;
@@ -94,4 +94,59 @@ body {
 .Button:active {
   transform: translateY(0);
   box-shadow: 0 1px 2px rgba(248, 136, 170, 0.3);
+}
+
+/* Clear Button Accent */
+.Button.ClrButton {
+  background: #fd95b4;
+  color: #5c132f;
+  box-shadow: 0 2px 4px rgba(248, 136, 170, 0.4);
+}
+
+.Button.ClrButton:hover {
+  background: #e06388;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(224, 99, 136, 0.5);
+}
+
+.Button.ClrButton:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(224, 99, 136, 0.3);
+}
+
+/* Name Button Layout & Styling */
+.NameButtonContainer {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.NameButton {
+  width: 100%;
+  background: #b3de89;
+  color: #2e4d14;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 4px rgba(179, 222, 137, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NameButton:hover {
+  background: #99cc66;
+  color: #1e360b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(153, 204, 102, 0.5);
+}
+
+.NameButton:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(153, 204, 102, 0.4);
 }
